@@ -1,7 +1,0 @@
-services:
-  powershell-service:
-    build: .
-    container_name: powershell-service
-    volumes:
-      - ./src:/app
-    tty: true

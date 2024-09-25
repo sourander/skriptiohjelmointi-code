@@ -1,3 +1,8 @@
-Write-Host "[INFO] Running the setup_for_script.ps1 script"
+# Define the path to the file
+$filePath = "/app/test.txt"
 
-# You could place any setup commands here, e.g., installing dependencies, etc.
+# Create the file and write "Hello world!" to it
+"Hello world!" | Out-File -FilePath $filePath -Encoding utf8
+
+# Optional: Output a confirmation message
+Write-Host "File created at $filePath with content: 'Hello world!'"

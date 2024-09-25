@@ -9,3 +9,6 @@ COPY src/ /app/
 
 # Run the setup script
 RUN pwsh /app/setup_for_script.ps1
+
+# Set the entry point to PowerShell
+ENTRYPOINT ["pwsh"]
