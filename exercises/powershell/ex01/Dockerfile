@@ -8,4 +8,4 @@ WORKDIR /app
 COPY src/ /app/
 
 # Run the setup script
-# RUN pwsh /app/setup_for_script.ps1
+RUN pwsh /app/setup_for_script.ps1
