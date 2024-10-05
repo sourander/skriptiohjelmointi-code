@@ -1,5 +1,13 @@
-# Use the latest PowerShell Core image
-FROM mcr.microsoft.com/powershell:latest
+# For x86_64 (Intel/AMD) chips
+FROM mcr.microsoft.com/powershell:latest AS amd64
+# For macOS (Silicon chips)
+FROM mcr.microsoft.com/powershell:mariner-2.0-arm64 AS arm64
+
+# Docker's built-in ARG variable is used to pass the target architecture
+ARG TARGETARCH
+
+# Choose the correct base image based on the architecture
+FROM ${TARGETARCH} AS final
 
 # Create a working directory
 WORKDIR /app
@@ -9,6 +17,9 @@ COPY src/ /app/
 
 # Run the setup script
 RUN pwsh /app/setup_for_script.ps1
+
+# Update the help
+RUN pwsh -Command "Update-Help"
 
 # Set the entry point to PowerShell
 ENTRYPOINT ["pwsh"]
