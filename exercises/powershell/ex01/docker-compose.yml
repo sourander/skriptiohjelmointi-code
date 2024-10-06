@@ -1,0 +1,25 @@
+services:
+  pwsh-tester:
+    build:
+      context: .
+      dockerfile: tester.Dockerfile
+    volumes:
+      - ./test-results:/test-results
+    # command: "Invoke-Pester /app/tests -OutputFile '/test-results/results.html' -OutputFormat NUnitXml"
+    command: [
+      "-Command", 
+      "Invoke-Pester /app/tests -OutputFile '/test-results/results.xml' -OutputFormat JUnitXml"
+    ]
+
+  junit-converter:
+    image: python:3.10
+    depends_on:
+      - pwsh-tester
+    volumes:
+      - ./test-results:/app/test-results
+    working_dir: /app/test-results
+    command: >
+      bash -c "
+      pip install junit2html &&
+      junit2html results.xml results.html
+      "

@@ -13,10 +13,10 @@ FROM ${TARGETARCH} AS final
 WORKDIR /app
 
 # Copy the contents of src into /app/
-COPY src/ /app/
+COPY src/ /app/src/
 
 # Run the setup script
-RUN pwsh /app/setup_for_script.ps1
+RUN pwsh /app/src/setup_for_script.ps1
 
 # Update the help
 RUN pwsh -Command "Update-Help"
