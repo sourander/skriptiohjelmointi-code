@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<testsuites xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="junit_schema_4.xsd" name="Pester" tests="1" errors="0" failures="0" disabled="0" time="0.228">
+  <testsuite name="/app/tests/ex01.Tests.ps1" tests="1" errors="0" failures="0" hostname="d8d2e2b5c946" id="0" skipped="0" disabled="0" package="/app/tests/ex01.Tests.ps1" time="0.228">
+    <properties>
+      <property name="junit-version" value="4" />
+      <property name="clr-version" value="8.0.8" />
+      <property name="user" value="root" />
+      <property name="user-domain" value="" />
+      <property name="platform" value="Linux" />
+      <property name="os-version" value="6.10.4-linuxkit" />
+      <property name="cwd" value="/app/tests" />
+      <property name="framework-version" value="5.6.1" />
+      <property name="machine-name" value="d8d2e2b5c946" />
+    </properties>
+    <testcase name="Exercise 01.should output the correct greeting" status="Passed" classname="/app/tests/ex01.Tests.ps1" assertions="0" time="0.052" />
+  </testsuite>
+</testsuites>

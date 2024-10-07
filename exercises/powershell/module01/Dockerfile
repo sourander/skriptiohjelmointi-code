@@ -10,16 +10,18 @@ ARG TARGETARCH
 FROM ${TARGETARCH} AS final
 
 # Create a working directory
-WORKDIR /app
+WORKDIR /skriptiohjelmointi
 
 # Copy the contents of src into /app/
-COPY src/ /app/src/
+COPY files-for-docker/ /docker-automation/
 
-# Run the setup script
-RUN pwsh /app/src/setup_for_script.ps1
+# Run the setup script - this is currently a placeholder for future use
+# that would be used to set up the environment for student activities
+# (e.g. downloading files, cloning repos, creating files, etc.)
+RUN pwsh /docker-automation/setup_that_docker_runs.ps1
 
 # Update the help
-RUN pwsh -Command "Update-Help"
+# RUN pwsh -Command "Update-Help"
 
 # Set the entry point to PowerShell
 ENTRYPOINT ["pwsh"]

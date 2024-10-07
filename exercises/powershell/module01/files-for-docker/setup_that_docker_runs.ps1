@@ -1,5 +1,5 @@
 # Define the path to the file
-$filePath = "/app/test.txt"
+$filePath = "/skriptiohjelmointi/hello_from_docker.txt"
 
 # Create the file and write "Hello world!" to it
 "Hello world!" | Out-File -FilePath $filePath -Encoding utf8
