@@ -31,4 +31,6 @@ Kaikki tämän osion tehtävät ajetaan siis Docker-kontissa, joka käyttää Po
 
 ## Deprekoituneet komennot
 
-Mikäli versio päivittyy, tämä kurssi pitää päivittää vastaamaan uusinta versiota. Mikäli `powershell:latest` sisältää 7.4-versiota tuoreemman, ja löydät tämän dokumentaation päivittämisen tarpeelliseksi, tee pull request ja päivitä dokumentaatio vastaamaan uusinta versiota. Tai ota yhteys opettajaan.
+Mikäli versio päivittyy, tämä kurssi pitää päivittää vastaamaan uusinta versiota. Käytämme rohkeasti `powershell:latest` versiota, joka on tämän kirjoitushetkellä `7.4`. Mikäli PowerShell päivittyy, on aina mahdollista, että jokin komento saattaa deprekoitua, eli meidän pitää siirtyä käyttämään jotakin toista komentoa - tai lukitsemaan tietyn `powershell:7.x` -version käyttö.
+
+Kurssin edetessä saatamme joutua tämän takia päivittää tehtävänantoja tai ottaa käyttöön käsin määritellyn, toimivaksi havaitun version (esim. `powershell:7.4-ubuntu-22.04`). Tästä tiedotetaan kurssin edetessä.

@@ -12,7 +12,7 @@ FROM ${TARGETARCH} AS final
 # Create a working directory
 WORKDIR /skriptiohjelmointi
 
-# Copy the contents of src into /app/
+# Copy the setup scripts
 COPY files-for-docker/ /docker-automation/
 
 # Run the setup script - this is currently a placeholder for future use

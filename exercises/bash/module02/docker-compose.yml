@@ -1,0 +1,8 @@
+services:
+  bash-tester:
+    build:
+      context: .
+      dockerfile: tester.Dockerfile
+    volumes:
+      - ./test-results:/test-results
+    command: "./lib/bashunit ./ --report-html /test-results/report.html"

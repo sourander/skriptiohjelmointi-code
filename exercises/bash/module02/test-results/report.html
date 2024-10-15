@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+    .passed { background-color: #dff0d8; }
+    .failed { background-color: #f2dede; }
+    .skipped { background-color: #fcf8e3; }
+    .incomplete { background-color: #d9edf7; }
+    .snapshot { background-color: #dfe6e9; }
+  </style>
+</head>
+<body>
+  <h1>Test Report</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Total Tests</th>
+        <th>Passed</th>
+        <th>Failed</th>
+        <th>Incomplete</th>
+        <th>Skipped</th>
+        <th>Snapshot</th>
+        <th>Time (ms)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>45.5148</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Time: 45.5148 ms</p>
+  <h2>File: ./ex01_test.sh</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Test Name</th>
+        <th>Status</th>
+        <th>Time (ms)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="passed">
+        <td>test_hello_world</td>
+        <td>passed</td>
+        <td>12.7718</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
