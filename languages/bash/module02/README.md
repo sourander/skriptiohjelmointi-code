@@ -8,7 +8,7 @@ Voit yhä käyttää edellisessä moduulissa luotua `my-bash-image`-imagea ajama
 
 ## ⚠️ Ethän muuta tiedostoja! ⚠️
 
-Varsinaiset skriptit (`exercises/*.PS1`) tulee kuitenkin olla ajettavissa siten, että automaattinen testeri voi tarkistaa niiden toimivuuden. **Et siis saa muun muassa nimetä tiedostoja tai funktioita uusiksi.**
+Varsinaiset skriptit (`exercises/*.PS1`) tulee olla ajettavissa siten, että automaattinen testeri voi tarkistaa niiden toimivuuden. **Et siis saa muun muassa nimetä tiedostoja tai funktioita uusiksi.** Kirjoita vain funktioiden sisältöä tai muuta ohjeistettua sisältöä.
 
 ## Moduulin harjoitukset
 
